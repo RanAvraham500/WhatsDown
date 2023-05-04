@@ -9,5 +9,19 @@
         android:id="@+id/phoneNumberFragment"
         android:name="com.example.whatsdown.ui.registration.PhoneNumberFragment"
         android:label="fragment_phone_number"
-        tools:layout="@layout/fragment_phone_number" />
+        tools:layout="@layout/fragment_phone_number" >
+        <action
+            android:id="@+id/action_phoneNumberFragment_to_confirmationCodeFragment"
+            app:destination="@id/confirmationCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationCodeFragment"
+        android:name="com.example.whatsdown.ui.registration.ConfirmationCodeFragment"
+        android:label="fragment_confirmation_code"
+        tools:layout="@layout/fragment_confirmation_code" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.whatsdown.ui.registration.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
 </navigation>
